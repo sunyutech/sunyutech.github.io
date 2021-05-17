@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
+ 
 <head>
-	<title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 </head>
+ 
 <body>
-<div class="section hero">
-    <div class="container">
-      <div class="row">
-        <div class="one-half column">
-          <h5 class=""> App distribution.</h6>
-          <a class="button button-primary" href="itms-services://?action=download-manifest&url=https://drive.google.com/u/0/uc?id=1q5UWKWFWRHyZqf-4RfuTsc-V8Nl1ciFO&export=download">Download Your App</a>
-        </div>
-      </div>
+    <div onclick="download()" style="width: 100px; height: 100px; background: black;">
     </div>
 </body>
-</html>
-  
+ 
+<script>
+  function download () {
+    window.location.href = 'itms-services://?action=download-manifest&url=https://drive.google.com/u/0/uc?id=1q5UWKWFWRHyZqf-4RfuTsc-V8Nl1ciFO&export=download';
+  }
+</script>
+ 
